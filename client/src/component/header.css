@@ -1,0 +1,142 @@
+/* Default styles for large screens (desktop) */
+.slider-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.absolute {
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.text-4xl {
+  font-size: 3rem;
+}
+
+.text-3xl {
+  font-size: 2rem;
+}
+
+.invitee-detail-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #ffa500;
+  border-radius: 25px;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  .slider-container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .absolute {
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .text-4xl {
+    font-size: 2rem;
+  }
+
+  .text-3xl {
+    font-size: 1.75rem;
+  }
+
+  .invitee-detail-container {
+    max-width: 90%;
+    margin: 1.5rem auto;
+    font-size: 1rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .invite-action {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile styles for very small screens (below 480px) */
+@media (max-width: 480px) {
+  .text-4xl {
+    font-size: 1.75rem;
+  }
+
+  .text-3xl {
+    font-size: 1.5rem;
+  }
+
+  .invitee-detail-container {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  button {
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+}
+
+/* Define smaller and larger font size classes */
+.small-font {
+  font-size: 0.75rem; /* Smaller font */
+}
+
+.large-font {
+  font-size: 1.5rem; /* Larger font */
+}
+
+.normal-font {
+  font-size: 1rem; /* Normal font size (default) */
+}
+
+/* Adjust for hover effect */
+.hover-increase-font:hover {
+  font-size: 1.2rem; /* Slightly increase the font size on hover */
+  transition: font-size 0.2s ease-in-out;
+}
+.header-background {
+  background-image: url("../assets/hero/h1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Full height */
+}
+
+.header-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity here */
+  backdrop-filter: blur(5px); /* Adjust blur here */
+  z-index: 1; /* Make sure it’s behind the content but above the background */
+}

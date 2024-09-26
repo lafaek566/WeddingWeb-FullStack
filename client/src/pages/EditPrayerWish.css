@@ -1,0 +1,125 @@
+/* EditPrayerWish.css */
+
+.edit-prayer-wish {
+  max-width: 600px; /* Maximum width for larger screens */
+  margin: 0 auto; /* Center the form */
+  padding: 20px; /* Padding for spacing */
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+  text-align: center; /* Center the title */
+  color: #333; /* Dark color for text */
+}
+
+.wish-form {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Column direction */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Space between groups */
+}
+
+label {
+  margin-bottom: 5px; /* Space between label and input */
+  font-weight: bold; /* Bold labels */
+  color: #555; /* Darker text color for labels */
+}
+
+input,
+textarea {
+  padding: 10px; /* Padding inside input fields */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  transition: border-color 0.3s; /* Transition for border color */
+  font-size: 16px; /* Default font size */
+  width: 100%; /* Full width for inputs */
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff; /* Border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing */
+  min-height: 100px; /* Minimum height */
+}
+
+.form-actions {
+  display: flex; /* Flexbox for button layout */
+  justify-content: space-between; /* Space between buttons */
+}
+
+.update-button,
+.delete-button {
+  padding: 10px 15px; /* Padding for buttons */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  font-size: 16px; /* Font size for buttons */
+  transition: background-color 0.3s; /* Transition for background color */
+}
+
+.update-button {
+  background-color: #007bff; /* Primary color for update button */
+  color: white; /* White text */
+}
+
+.delete-button {
+  background-color: #dc3545; /* Danger color for delete button */
+  color: white; /* White text */
+}
+
+.update-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.delete-button:hover {
+  background-color: #c82333; /* Darker shade on hover */
+}
+
+.comments-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+  margin-top: 20px; /* Margin for top spacing */
+}
+
+.comments-list li {
+  background-color: #e9ecef; /* Light background for comments */
+  padding: 10px; /* Padding for comments */
+  margin: 5px 0; /* Vertical margin for spacing */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  .edit-prayer-wish {
+    padding: 15px; /* Reduced padding for mobile */
+  }
+
+  input,
+  textarea {
+    font-size: 14px; /* Smaller font size for inputs */
+  }
+
+  .update-button,
+  .delete-button {
+    font-size: 14px; /* Smaller font size for buttons */
+  }
+
+  .form-actions {
+    flex-direction: column; /* Stack buttons on top of each other */
+    align-items: stretch; /* Stretch buttons to full width */
+  }
+
+  .update-button,
+  .delete-button {
+    width: 100%; /* Full width for buttons */
+    margin-bottom: 10px; /* Space between stacked buttons */
+  }
+}

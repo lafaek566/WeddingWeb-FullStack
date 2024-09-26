@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap");
+
+.font-cute {
+  font-family: "Comic Neue", cursive;
+}
+.icon-image {
+  width: 120px; /* Default width for desktop */
+  height: 40px; /* Default height for desktop */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make the image circular */
+  border: solid #fff; /* Optional: Add border around the icon */
+}

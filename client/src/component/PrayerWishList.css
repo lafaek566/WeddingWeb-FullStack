@@ -1,0 +1,92 @@
+/* PrayerWishList.css */
+
+.prayer-wish-list {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.wish-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.wish-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.wish-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.wish-content {
+  flex: 1;
+}
+
+.wish-name {
+  font-size: 18px;
+  margin: 0;
+  color: #007bff;
+}
+
+.wish-message {
+  margin: 5px 0 0;
+  color: #555;
+}
+
+.wish-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+  transition: background-color 0.2s;
+}
+
+.edit-button {
+  background-color: #007bff; /* Blue */
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.delete-button {
+  background-color: #dc3545; /* Red */
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
